@@ -1,0 +1,144 @@
+https://drive.google.com/drive/u/0/folders/1me_nJJh0fvdDOXX3ew2jzGQpoP7f_iFt
+
+you need to:
+
+Create two VMs (VM1 and VM2) from the .vmdk file.
+
+Connect them using a NAT Network in VirtualBox.
+
+Install openssh-server if not already installed (for file transfer using scp).
+
+Share a .txt file from VM1 to VM2.
+
+🛠 Step-by-Step Guide:
+Part 1: Setup VirtualBox and NAT Network
+1. Create a NAT Network
+Open VirtualBox.
+
+Go to File > Tools > Network Manager (or File > Preferences > Network).
+
+Click Create to make a new NAT Network:
+
+Name: NATNetwork
+
+Enable DHCP.
+
+Don't check "IPv6".
+
+Save and close.
+
+Part 2: Create Two VMs (VM1 and VM2)
+2. Create VM1
+Click New in VirtualBox.
+
+Name: VM1
+
+Type: Linux, Version: Ubuntu (64-bit).
+
+Memory: Set 2048 MB RAM (2 GB) or as you like.
+
+When it asks for Hard Disk:
+
+Choose Use an existing virtual hard disk file.
+
+Browse and select ubuntu-18.04-amd64-disk001.vmdk (the file your sir shared).
+
+Click Create.
+
+3. Create VM2
+Similarly, click New.
+
+Name: VM2
+
+Type: Linux, Version: Ubuntu (64-bit).
+
+Memory: 2048 MB RAM.
+
+When asked for Hard Disk:
+
+Again choose Use an existing virtual hard disk file.
+
+Select same ubuntu-18.04-amd64-disk001.vmdk or duplicate it if needed.
+
+Click Create.
+
+Part 3: Attach Both VMs to NAT Network
+4. Set Network for VM1 and VM2
+For both VMs:
+
+Select the VM → Click Settings → Network.
+
+Under Adapter 1:
+
+Check Enable Network Adapter.
+
+Attached to: NAT Network.
+
+Name: Select your NATNetwork.
+
+Save.
+
+✅ Now VM1 and VM2 are connected in the same private network.
+
+Part 4: Start VMs and Setup IP Addresses
+5. Start VM1 and VM2
+Start both VM1 and VM2.
+
+Login with username and password (check with your sir if required).
+
+6. Find their IP addresses
+Inside both VMs, open a terminal and type:
+
+ip a
+Look for an IP address like 10.0.2.15 or similar under enp0s3 or eth0.
+Example:
+
+VM1 IP: 10.0.2.4
+
+VM2 IP: 10.0.2.5
+
+📌 Note down their IPs!
+
+Part 5: Install OpenSSH Server
+(So they can communicate)
+
+7. Install SSH server on both VMs
+In VM1 and VM2, run:
+
+sudo apt update
+sudo apt install openssh-server
+✅ This allows them to send files using scp.
+
+Part 6: Share a .txt File
+8. Create a .txt file on VM1
+In VM1 terminal:
+
+echo "Hello from VM1!" > myfile.txt
+Now, you have myfile.txt ready in VM1.
+
+9. Transfer file from VM1 to VM2 using scp
+In VM1 terminal, type:
+
+scp myfile.txt username@<VM2-IP>:/home/username/
+Replace:
+
+username → your username in VM2.
+
+<VM2-IP> → the IP address of VM2 (like 10.0.2.5).
+
+Example:
+
+scp myfile.txt student@10.0.2.5:/home/student/
+It will ask for VM2's password → Enter it.
+
+✅ After successful transfer, file will appear in /home/username/ of VM2!
+
+Part 7: Verify
+In VM2, check the file:
+
+ls
+cat myfile.txt
+
+You should see:
+
+Hello from VM1!
