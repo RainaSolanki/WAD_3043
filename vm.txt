@@ -1,5 +1,5 @@
 https://drive.google.com/drive/u/0/folders/1me_nJJh0fvdDOXX3ew2jzGQpoP7f_iFt
-
+password and username - vagrant
 you need to:
 
 Create two VMs (VM1 and VM2) from the .vmdk file.
