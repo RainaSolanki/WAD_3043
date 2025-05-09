@@ -1,0 +1,79 @@
+/* Reset and base styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: #003566;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .navbar-brand, .nav-link {
+    font-weight: 500;
+    color: #003566 !important;
+  }
+  
+  /* Main section */
+  .container h2 {
+    color: #001d3d;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .container p {
+    color: #333;
+  }
+  
+  /* Buttons */
+  .subjectButton {
+    background-color: #0077b6;
+    color: white;
+    margin: 5px 5px 5px 0;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .subjectButton:hover {
+    background-color: #005f8e;
+  }
+  
+  /* Syllabus details */
+  #syllabusDetails {
+    background-color: #e8f1f8;
+    border-left: 4px solid #0077b6;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Image */
+  img {
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #001d3d;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+  }
+  

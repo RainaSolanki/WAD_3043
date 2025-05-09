@@ -1,0 +1,83 @@
+/* General Styling */
+body {
+  background-color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar-custom {
+  background-color: #007bff;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: white;
+}
+
+.services-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.card-title {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.contact-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.contact-btn:hover {
+  background-color: #007bff;
+  transition: background-color 0.3s;
+}
+
+footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Service Section */
+.services-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  margin: 15px;
+  width: 200px;
+  text-align: center;
+}
+
+.service-item h5 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #007bff;
+}
+
+.service-item p {
+  color: #555;
+}
+
+/* Section Title */
+.section-title {
+  font-weight: 600;
+  color: #3b3b3b;
+}
+
+

@@ -1,0 +1,36 @@
+git init
+git add .
+git commit -m "Initial commit"
+
+
+PUSH TO GITHUB 
+git remote add origin <link>
+git branch -M main
+git push -u origin main
+
+
+create new file
+
+STAGE AND COMMIT CHANGES
+git add <new_file.txt>
+git commit -m "Added new file"
+
+PUSH TO GITHUB
+git push origin main
+
+CREATE NEW BRANCH
+git checkout -b <newbranchname>
+
+MODIFY THE NEW TEXT FILE
+
+COMMIT THE CHANGES IN NEW BRANCH
+git add <new_file.txt>
+git commit -m "Updated new file in new branch"
+
+MERGE CHANGES BACK TO MAIN
+git checkout main
+git merge <newbranch> 
+
+PUSH MERGED CHANGES TO GITHUB
+git push origin main
+

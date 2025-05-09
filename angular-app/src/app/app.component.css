@@ -1,0 +1,104 @@
+/* General button styles */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  /* Home page button styles */
+  button:hover {
+    background-color: #728d99; /* Grey */
+    transform: scale(1.1);
+  }
+  
+  button:active {
+    transform: scale(1);
+  }
+  
+  /* Register button */
+  button:nth-child(1) {
+    background-color: #2196F3; /* Blue */
+    color: white;
+  }
+  
+  button:nth-child(1):hover {
+    background-color: #1976D2; /* Darker Blue */
+  }
+  
+  /* Login button */
+  button:nth-child(2) {
+    background-color: #FF5722; /* Orange */
+    color: white;
+  }
+  
+  button:nth-child(2):hover {
+    background-color: #E64A19; /* Darker Orange */
+  }
+  
+  /* Profile button */
+  button:nth-child(3) {
+    background-color: #9C27B0; /* Purple */
+    color: white;
+  }
+  
+  button:nth-child(3):hover {
+    background-color: #7B1FA2; /* Darker Purple */
+  }
+  
+  /* Submit button */
+  button:nth-child(4) {
+    background-color: #8BC34A; /* Green */
+    color: white;
+  }
+  
+  button:nth-child(4):hover {
+    background-color:#7CB342; /* Darker Green */
+  }
+  
+  /* Submit button */
+  button[type="submit"] {
+    background-color: #607D8B; /* Grey*/
+    color: white;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #455A64; /* Darker Grey */
+  }
+  
+  /* Logout button */
+  button.logout {
+    background-color: #F44336; /* Red */
+    color: white;
+  }
+  
+  button.logout:hover {
+    background-color: #D32F2F; /* Darker Red */
+  }
+  
+  /* Active hover state */
+  button:active {
+    background-color: #f1f1f1;
+    transform: scale(1);
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  input {
+    display: block;           /* Makes inputs block elements, stacking them vertically */
+    width: 100%;
+    max-width: 300px;         /* Limit the max width of inputs */
+    padding: 10px;
+    margin: 10px 0;           /* Vertical spacing between inputs */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #f9f9f9; /* Light background for inputs */
+  }
+  

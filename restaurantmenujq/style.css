@@ -1,0 +1,48 @@
+/* Horizontal scroll card layout */
+.menu-cards {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 15px;
+  }
+  
+  .menu-card {
+    flex: 0 0 auto;
+    height: 400px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 10px;
+    margin-left: 35px;
+    margin-top: 40px;
+  }
+  
+  .menu-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .menu-card h3 {
+    margin: 10px 0 5px;
+  }
+  
+  .menu-card p {
+    color: #555;
+  }
+  
+  /* Center small image in detail page */
+  #menu-detail img {
+    width: auto;
+    height:400px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    font-family :Impact, Haettenschweiler, 'Arial Narrow Bold';
+    font-style: italic;
+  }
+  

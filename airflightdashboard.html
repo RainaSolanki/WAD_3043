@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flight Booking Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      background-color: #f1f6fa;
+    }
+    .navbar-custom {
+      background-color: #003049;
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: #ffffff;
+    }
+    .search-box {
+      width: 280px;
+    }
+    .card {
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+    .section-title {
+      font-weight: 600;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">AirFly Dashboard</a>
+      <form class="d-flex mx-auto">
+        <input class="form-control me-2 search-box" type="search" placeholder="Search Flights..." aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+
+    <!-- Flight Overview Cards -->
+    <div class="row text-center">
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 bg-light">
+          <h5 class="text-primary">Total Bookings</h5>
+          <h3>8,540</h3>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 bg-light">
+          <h5 class="text-success">Available Flights</h5>
+          <h3>92</h3>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 bg-light">
+          <h5 class="text-danger">Delayed Flights</h5>
+          <h3>5</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section: Recent Bookings -->
+    <h4 class="section-title text-dark">Recent Bookings</h4>
+    <table class="table table-bordered bg-white mt-2">
+      <thead class="table-dark">
+        <tr>
+          <th>Booking ID</th>
+          <th>Passenger</th>
+          <th>Flight</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#B1020</td>
+          <td>Alice Johnson</td>
+          <td>AF-220 (NYC → LAX)</td>
+          <td><span class="badge bg-success">Confirmed</span></td>
+        </tr>
+        <tr>
+          <td>#B1019</td>
+          <td>Michael Singh</td>
+          <td>AF-310 (DEL → DXB)</td>
+          <td><span class="badge bg-warning">Pending</span></td>
+        </tr>
+        <tr>
+          <td>#B1018</td>
+          <td>Sarah Lee</td>
+          <td>AF-101 (LDN → PAR)</td>
+          <td><span class="badge bg-success">Confirmed</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Section: Upcoming Flights -->
+    <h4 class="section-title text-dark">Available Flights</h4>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">AF-205: NYC → TOR</h5>
+            <p class="card-text">Departure: 10:30 AM<br>Seats Available: 23</p>
+            <button class="btn btn-sm btn-primary w-100">Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">AF-312: BLR → MUM</h5>
+            <p class="card-text">Departure: 1:15 PM<br>Seats Available: 12</p>
+            <button class="btn btn-sm btn-primary w-100">Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">AF-409: DXB → LON</h5>
+            <p class="card-text">Departure: 8:45 PM<br>Seats Available: 30</p>
+            <button class="btn btn-sm btn-primary w-100">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="text-center py-3 mt-4 text-muted">
+    &copy; 2025 AirFly Admin Portal
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

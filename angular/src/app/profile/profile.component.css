@@ -1,0 +1,33 @@
+/* Page heading */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Profile box container */
+  .profile-box {
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 20px 25px;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Individual info rows */
+  .profile-box p {
+    margin: 12px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 6px;
+  }
+  
+  /* Bold labels */
+  .profile-box strong {
+    color: #555;
+    width: 80px;
+    display: inline-block;
+  }
+  

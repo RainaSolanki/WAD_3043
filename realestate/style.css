@@ -1,0 +1,11 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card-title {
+    color: #0d6efd;
+}
+.card-img-top {
+    width: 100%; /* Make sure the image takes up the full width of the card */
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: contain; /* Ensures the image covers the area without stretching */
+  }

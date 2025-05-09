@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+header {
+  color: #1c1c1c;
+  text-align: center;
+}
+
+footer {
+  background-color: #212529;
+  color: white;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #343a40;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+#offersBox {
+  display: none;
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 8px;
+}

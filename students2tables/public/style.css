@@ -1,0 +1,167 @@
+/* Body and General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Header Style */
+.header {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+/* Form Container */
+.form-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Input and Button Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="number"],
+select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Button Style */
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Container for Tables */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Table Containers */
+.table-container {
+  width: 45%;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+}
+
+/* Table Left and Right Style */
+.left {
+  background-color: #ecf0f1;
+}
+
+.right {
+  background-color: #e1dfec;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+th {
+  background-color: #3498db;
+  color: white;
+}
+
+
+
+
+
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .table-container {
+    width: 45%;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+  }
+  
+  .left {
+    background-color: #ecf0f1;
+  }
+  
+  .right {
+    background-color: #e1dfec;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #3498db;
+    color: white;
+  }
+   */

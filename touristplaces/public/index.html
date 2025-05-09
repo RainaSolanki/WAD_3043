@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tourist Places of India</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+  .card {
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: contain;
+  background-color: #f8f9fa;
+}
+
+.card-body {
+  flex: 1;
+}
+
+.carousel-inner img {
+  height: 600px;
+  object-fit: contain;
+  background-color: #f8f9fa;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="container mt-4">
+    <div class="sticky-top bg-white py-3 border-bottom">
+      <h1 class="text-center mb-0">Famous Tourist Places of India</h1>
+    </div>
+    
+
+    <!-- Carousel -->
+    <div id="touristCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/taj.jpg" class="d-block w-100" alt="Taj Mahal">
+        </div>
+        <div class="carousel-item">
+          <img src="images/qutub.jpg" class="d-block w-100" alt="Qutub Minar">
+        </div>
+        <div class="carousel-item">
+          <img src="images/india_gate.jpg" class="d-block w-100" alt="India Gate">
+        </div>
+        <div class="carousel-item">
+          <img src="images/gateway.jpg" class="d-block w-100" alt="Gateway of India">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#touristCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#touristCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- Tourist Place Cards -->
+    <div class="row text-center">
+      <div class="col-md-3">
+        <div class="card">
+          <img src="images/taj.jpg" class="card-img-top" alt="Taj Mahal">
+          <div class="card-body">
+            <h5 class="card-title">Taj Mahal</h5>
+            <p class="card-text">Located in Agra, the Taj Mahal is a symbol of love and a UNESCO World Heritage Site.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="images/qutub.jpg" class="card-img-top" alt="Qutub Minar">
+          <div class="card-body">
+            <h5 class="card-title">Qutub Minar</h5>
+            <p class="card-text">The Qutub Minar in Delhi is the tallest brick minaret in the world, built in 1193.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="images/india_gate.jpg" class="card-img-top" alt="India Gate">
+          <div class="card-body">
+            <h5 class="card-title">India Gate</h5>
+            <p class="card-text">A war memorial in New Delhi, India Gate commemorates Indian soldiers of WWI.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="images/gateway.jpg" class="card-img-top" alt="Gateway of India">
+          <div class="card-body">
+            <h5 class="card-title">Gateway of India</h5>
+            <p class="card-text">Located in Mumbai, this iconic arch was built during the 20th century for King George V's visit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

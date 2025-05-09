@@ -1,0 +1,56 @@
+<div class="center">
+  <h1> User Registration</h1>
+
+  <!-- Home Page -->
+  <div *ngIf="mode === 'home'">
+    <button (click)="mode = 'register'">Register</button>
+    <button (click)="mode = 'login'">Login</button>
+    <button (click)="showProfile()">Profile</button>
+  </div>
+
+  <!-- Register Page -->
+  <div *ngIf="mode === 'register'">
+    <h2>Register</h2>
+    <input [(ngModel)]="username" placeholder="Username">
+    <input [(ngModel)]="password" placeholder="Password" type="password">
+    <button (click)="register()">Submit</button>
+    <button (click)="mode = 'home'">Back</button>
+  </div>
+
+  <!-- Login Page -->
+  <div *ngIf="mode === 'login'">
+    <h2>Login</h2>
+    <input [(ngModel)]="username" placeholder="Username">
+    <input [(ngModel)]="password" placeholder="Password" type="password">
+    <button (click)="login()">Login</button>
+    <button (click)="mode = 'home'">Back</button>
+  </div>
+
+  <!-- Profile Page -->
+  <div *ngIf="mode === 'profile'">
+    <!-- Logged-in user details -->
+    <div *ngIf="currentUser">
+      <h2>Welcome, {{ currentUser.username }}!</h2>
+      <p>Password: {{ currentUser.password }}</p>
+      <button (click)="logout()">Logout</button>
+      <button (click)="mode = 'home'">Back to Home</button>
+    </div>
+
+    <!-- List of registered users -->
+    <div *ngIf="!currentUser">
+      <h2>Registered Users</h2>
+      <div *ngIf="users.length > 0">
+        <ul>
+          <li *ngFor="let user of users">
+            <strong>{{ user.username }}</strong> - {{ user.password }}
+          </li>
+        </ul>
+      </div>
+      <div *ngIf="users.length === 0">
+        <p>No users registered yet.</p>
+      </div>
+      <button (click)="logout()">Logout</button>
+      <button (click)="mode = 'home'">Back to Home</button>
+    </div>
+  </div>
+</div>

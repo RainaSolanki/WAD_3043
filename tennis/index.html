@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All About Tennis</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg" style="background-color: #2e8b57;">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">Tennis World</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-white">
+          <li class="nav-item"><a class="nav-link" href="#players">Players</a></li>
+          <li class="nav-item"><a class="nav-link" href="#rules">Rules</a></li>
+          <li class="nav-item"><a class="nav-link" href="#grand-slam">Grand Slams</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="text-center py-2">
+    <h2>All About Tennis</h2>
+    <p class="lead">Learn about top players, tennis rules and grand slam tournaments</p>
+  </header>
+
+  <!-- Players Section -->
+  <section id="players" class="container my-3">
+    <div class="card shadow p-4">
+      <h2 class="text-center">Famous Tennis Players</h2>
+      <div class="row text-center mt-4">
+        <div class="col-md-4 mb-4">
+          <img src="images/federer.jpg" class="img-fluid rounded" alt="Federer"/>
+          <h5 class="mt-2">Roger Federer</h5>
+          <button class="btn btn-success mt-2" onclick="showAchievements('federer')">View Achievements</button>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="images/djokovic.jpg" class="img-fluid rounded" alt="Djokovic"/>
+          <h5 class="mt-2">Novak Djokovic</h5>
+          <button class="btn btn-success mt-2" onclick="showAchievements('djokovic')">View Achievements</button>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="images/alcaraz.jpg" class="img-fluid rounded" alt="Alcaraz"/>
+          <h5 class="mt-2">Carlos Alcaraz</h5>
+          <button class="btn btn-success mt-2" onclick="showAchievements('alcaraz')">View Achievements</button>
+        </div>
+      </div>
+      <div id="achievements" class="text-center mt-4 fw-bold"></div>
+    </div>
+  </section>
+  
+
+  <!-- Rules Section -->
+  <section id="rules" class="container my-5">
+    <div class="card shadow p-4">
+      <h2 class="text-center">Basic Tennis Rules</h2>
+      <ul class="mt-3">
+        <li>Matches are played as best-of-3 or best-of-5 sets.</li>
+        <li>A player must win 6 games by a margin of 2 to win a set.</li>
+        <li>The game uses a unique scoring system: 15, 30, 40, and game.</li>
+        <li>Players switch sides after every odd game.</li>
+      </ul>
+    </div>
+  </section>
+  
+
+  <!-- Grand Slam Section -->
+  <section id="grand-slam" class="container my-5">
+    <div class="card shadow p-4">
+      <h2 class="text-center">Grand Slam Tournaments</h2>
+      <div class="row text-center mt-4">
+        <div class="col-md-3">
+          <h5>Australian Open</h5>
+          <p>January - Melbourne</p>
+        </div>
+        <div class="col-md-3">
+          <h5>French Open</h5>
+          <p>May - Paris</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Wimbledon</h5>
+          <p>July - London</p>
+        </div>
+        <div class="col-md-3">
+          <h5>US Open</h5>
+          <p>September - New York</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="text-white text-center py-3">
+    <p>&copy; 2025 Tennis World | All rights reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hospital Management System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Patient Registration</h2>
+    <form id="patientForm">
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name:</label>
+        <input type="text" class="form-control" id="name" required />
+      </div>
+      <div class="mb-3">
+        <label for="age" class="form-label">Age:</label>
+        <input type="number" class="form-control" id="age" required />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Gender:</label><br />
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="gender" value="Male" required />
+          <label class="form-check-label">Male</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="gender" value="Female" required />
+          <label class="form-check-label">Female</label>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="contact" class="form-label">Contact Number:</label>
+        <input type="tel" class="form-control" id="contact" maxlength="10" required />
+      </div>
+      <div class="mb-3">
+        <label for="address" class="form-label">Address:</label>
+        <textarea class="form-control" id="address" rows="2" required></textarea>
+      </div>
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary">Register Patient</button>
+      </div>
+    </form>
+
+    <div id="count">Total Patients Registered: 0</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

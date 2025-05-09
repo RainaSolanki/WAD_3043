@@ -1,0 +1,41 @@
+body {
+    background-color: #f4f4f4;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  header {
+    margin-top: 20px;
+    color: #2e8b57;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #2e8b57;
+    color: white;
+    padding: 10px;
+  }
+
+  
+  img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  img:hover {
+    transform: scale(1.05);
+  }
+
+  
+  #achievements {
+    margin-top: 20px;
+    color: #155724;
+  }
+
+  .no-bullets {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  

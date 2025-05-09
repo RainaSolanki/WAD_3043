@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Departments</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- jQuery Mobile CDN -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    body {
+      background: #f0f4f8;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .dept-block {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .dept-block:hover {
+      transform: scale(1.03);
+    }
+
+    .dept-name {
+      font-weight: bold;
+      font-size: 16px;
+      color: #0d6efd;
+      margin-bottom: 10px;
+    }
+
+    .ui-grid-d .ui-block-a,
+    .ui-grid-d .ui-block-b,
+    .ui-grid-d .ui-block-c,
+    .ui-grid-d .ui-block-d,
+    .ui-grid-d .ui-block-e {
+      padding: 8px;
+    }
+
+    .ui-btn {
+      background-color: #0d6efd !important;
+      color: white !important;
+      border-radius: 20px;
+      font-weight: bold;
+      padding: 6px 12px;
+    }
+
+    .ui-header, .ui-footer {
+      background-color: #0d6efd !important;
+      color: white !important;
+    }
+
+    .ui-content {
+      background-color: #f0f4f8 !important;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+  <div data-role="header">
+    <h1>Department Grid View</h1>
+  </div>
+
+  <div data-role="content">
+    <div class="ui-grid-d">
+
+      <div class="ui-block-a">
+        <div class="dept-block">
+          <div class="dept-name">Computer Science</div>
+          <a href="#dept1" class="ui-btn">View Info</a>
+        </div>
+      </div>
+
+      <div class="ui-block-b">
+        <div class="dept-block">
+          <div class="dept-name">Information Technology</div>
+          <a href="#dept2" class="ui-btn">View Info</a>
+        </div>
+      </div>
+
+      <div class="ui-block-c">
+        <div class="dept-block">
+          <div class="dept-name">Electronics Engineering</div>
+          <a href="#dept3" class="ui-btn">View Info</a>
+        </div>
+      </div>
+
+      <div class="ui-block-d">
+        <div class="dept-block">
+          <div class="dept-name">Mechanical Engineering</div>
+          <a href="#dept4" class="ui-btn">View Info</a>
+        </div>
+      </div>
+
+      <div class="ui-block-e">
+        <div class="dept-block">
+          <div class="dept-name">Civil Engineering</div>
+          <a href="#dept5" class="ui-btn">View Info</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Department Info Pages -->
+<div data-role="page" id="dept1">
+  <div data-role="header"><a href="#home">Back</a><h1>CSE</h1></div>
+  <div data-role="content">
+    <p>The Computer Science & Engineering department focuses on software development, artificial intelligence, and systems architecture.</p>
+  </div>
+</div>
+
+<div data-role="page" id="dept2">
+  <div data-role="header"><a href="#home">Back</a><h1>IT</h1></div>
+  <div data-role="content">
+    <p>The Information Technology department deals with data networks, cybersecurity, and IT infrastructure management.</p>
+  </div>
+</div>
+
+<div data-role="page" id="dept3">
+  <div data-role="header"><a href="#home">Back</a><h1>ECE</h1></div>
+  <div data-role="content">
+    <p>ECE involves communication systems, signal processing, VLSI design, and embedded electronics.</p>
+  </div>
+</div>
+
+<div data-role="page" id="dept4">
+  <div data-role="header"><a href="#home">Back</a><h1>MECH</h1></div>
+  <div data-role="content">
+    <p>Mechanical Engineering focuses on machine design, thermodynamics, manufacturing, and energy systems.</p>
+  </div>
+</div>
+
+<div data-role="page" id="dept5">
+  <div data-role="header"><a href="#home" >Back</a><h1>CIVIL</h1></div>
+  <div data-role="content">
+    <p>Civil Engineering covers construction technology, structural design, water resources, and urban development.</p>
+  </div>
+</div>
+
+</body>
+</html>

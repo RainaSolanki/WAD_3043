@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Movie Tickets</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Book Movie Tickets</h1>
+    </div>
+  </header>
+
+  <div class="container booking-container">
+    <form id="booking-form" class="booking-form">
+      <div class="form-group">
+        <label for="movie">Select Movie</label>
+        <select id="movie" required>
+          <option value="" disabled selected>Select Movie</option>
+          <option value="Inception">Inception</option>
+          <option value="Interstellar">Interstellar</option>
+          <option value="Avengers:Endgame">Avengers:Endgame</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="quantity">Number of Tickets</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <button type="submit" class="btn">Book Now</button>
+    </form>
+
+    <div id="confirmation-message" class="confirmation hidden">
+      <h2>Thank you!</h2><br>
+      <p>Your ticket for <span id="movie-name"></span> has been booked successfully.</p>
+      <p>Enjoy the show!</p><br>
+      <a href="/" class="btn">Go Back Home</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

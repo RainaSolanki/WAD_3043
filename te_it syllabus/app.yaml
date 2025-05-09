@@ -1,0 +1,22 @@
+runtime: python39
+
+handlers:
+  - url: /(.*\.css)
+    static_files: \1
+    upload: (.*\.css)
+
+  - url: /(.*\.js)
+    static_files: \1
+    upload: (.*\.js)
+
+  - url: /(.*\.jpg)
+    static_files: \1
+    upload: (.*\.jpg)
+
+  - url: /(.*\.png)
+    static_files: \1
+    upload: (.*\.png)
+
+  - url: /.*  # Catch-all to serve index.html
+    static_files: index.html
+    upload: index.html

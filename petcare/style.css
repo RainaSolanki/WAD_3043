@@ -1,0 +1,95 @@
+/* Body and overall styling */
+body {
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar styling */
+.navbar-custom {
+  background-color: #6c4f3d; /* Brown color */
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+
+/* Header Section */
+h1.display-4, .lead {
+  color: #6c4f3d; /* Brown color for header text */
+}
+
+p.lead {
+  color: #555; /* Light gray for the subheading */
+}
+
+/* Services Section */
+h2.section-title {
+  color: #6c4f3d; /* Brown color for section title */
+}
+
+/* Services Section */
+#services {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 30px 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #6c4f3d;
+}
+
+.service-item {
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+
+.service-item h5 {
+  color: #6c4f3d;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.service-item p {
+  color: #555;
+  font-size: 16px;
+}
+
+
+/* Button Styling */
+.btn-primary {
+  background-color: #6c4f3d; /* Brown button color */
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #4f3c2a; /* Darker brown for button hover */
+}
+
+/* Footer Styling */
+footer {
+  background-color: #6c4f3d; /* Brown color */
+  color: white !important;  /* Force white text color */
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+}
+
+footer p {
+  color: white !important; /* Ensure text is white */
+}

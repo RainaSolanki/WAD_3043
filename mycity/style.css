@@ -1,0 +1,19 @@
+body {
+  background-color: #f8f9fa;
+  margin-bottom: 60px; /* to ensure content doesn't hide behind fixed footer */
+  padding-bottom: 80px;
+}
+
+#infoBox {
+  margin-bottom: 70px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card {
+  height: 500px; /* Fixed height for all cards */
+}
+.card-img-top {
+  height: 400px; /* Fixed height for images */
+  object-fit: cover; /* Ensures images fill the area without distortion */
+}
