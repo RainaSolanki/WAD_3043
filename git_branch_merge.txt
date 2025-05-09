@@ -1,0 +1,146 @@
+ASUS@DESKTOP-VKO1RB5 MINGW64 ~ (master)
+$ git config --global user.name "RainaSolanki"
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 ~ (master)
+$ git config --global user.email "solankiraina1405@gmail.com"
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 ~ (master)
+$ cd D:\gitdemo
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo
+$ git init
+Initialized empty Git repository in D:/gitdemo/.git/
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (master)
+$ echo "#demo project"> README.md
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (master)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (master)
+$ git commit -m "Initial Commit"
+[master (root-commit) d0cf4eb] Initial Commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (master)
+$ git remote add origin https://github.com/RainaSolanki/gitdemo.git
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (master)
+$ git push -u origin master
+remote: Repository not found.
+fatal: repository 'https://github.com/RainaSolanki/gitdemo.git/' not found
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (master)
+$ git add .
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (master)
+$ git commit -m "Final Commit"
+[master 6f6e3f3] Final Commit
+ 2 files changed, 80 insertions(+)
+ create mode 100644 wad_ass1/index.html
+ create mode 100644 wad_ass1/styles.css
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (master)
+$ git remote add origin https://github.com/RainaSolanki/WAD.git
+error: remote origin already exists.
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (master)
+$ git remote -v
+origin  https://github.com/RainaSolanki/gitdemo.git (fetch)
+origin  https://github.com/RainaSolanki/gitdemo.git (push)
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (master)
+$ git remote remove origin
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (master)
+$ git remote add origin https://github.com/RainaSolanki/WAD.git
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (master)
+$ git push -u origin master
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 1.28 KiB | 653.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/RainaSolanki/WAD.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (master)
+$ git pull origin master
+From https://github.com/RainaSolanki/WAD
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (master)
+$ git checkout -b feature-1
+Switched to a new branch 'feature-1'
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (feature-1)
+$ git add .
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (feature-1)
+$ git commit -m "Branch testing"
+On branch feature-1
+nothing to commit, working tree clean
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (feature-1)
+$ echo "Branch test" >>feature.txt
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (feature-1)
+$ git commit -u "new text"
+error: pathspec 'new text' did not match any file(s) known to git
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (feature-1)
+$ git add feature.txt
+warning: in the working copy of 'feature.txt', LF will be replaced by CRLF the next time Git touches it
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (feature-1)
+$ git commit -u "new text"
+error: pathspec 'new text' did not match any file(s) known to git
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (feature-1)
+$ git commit -m "new text"
+[feature-1 3c6a75f] new text
+ 1 file changed, 1 insertion(+)
+ create mode 100644 feature.txt
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (feature-1)
+$ git push origin feature-1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 328 bytes | 328.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'feature-1' on GitHub by visiting:
+remote:      https://github.com/RainaSolanki/WAD/pull/new/feature-1
+remote:
+To https://github.com/RainaSolanki/WAD.git
+ * [new branch]      feature-1 -> feature-1
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (feature-1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (master)
+$ git merge feature-1
+Updating 6f6e3f3..3c6a75f
+Fast-forward
+ feature.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 feature.txt
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (master)
+$ git push origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/RainaSolanki/WAD.git
+   6f6e3f3..3c6a75f  master -> master
+
+ASUS@DESKTOP-VKO1RB5 MINGW64 /d/gitdemo (master)
+$
