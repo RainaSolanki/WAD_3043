@@ -1,0 +1,53 @@
+Step 1: Install Node.js and npm
+Angular requires Node.js and npm (Node Package Manager).
+
+Download and install from https://nodejs.org
+
+Verify installation:
+
+node -v
+npm -v
+
+Step 2: Install Angular CLI (Command Line Interface)
+Open the terminal in VS Code and run:
+
+npm install -g @angular/cli
+Verify Angular CLI installation:
+
+ng version
+
+Step 3: Create a New Angular App
+In the terminal, run:
+
+ng new my-angular-app
+Use the arrow keys to select options like routing or stylesheet format (CSS, SCSS, etc.)
+
+Navigate to the created folder:
+
+cd my-angular-app
+
+Step 4: Open the Project in VS Code
+If you’re not already inside VS Code, open the folder using:
+
+code .
+
+Run npm install
+Open VS Code Terminal in the root of your Angular project (in your case, D:\3026\angular).
+
+Run:
+npm install
+
+
+Step 5: Run the Angular Application
+Start the development server:
+
+ng serve
+or
+ng serve --open
+
+This will compile the app and open it in your default browser at http://localhost:4200
+
+Step 6: Edit and Develop
+Modify files inside the src/app/ directory (like app.component.ts, app.component.html) to update your app.
+
+The app auto-reloads when you save changes.

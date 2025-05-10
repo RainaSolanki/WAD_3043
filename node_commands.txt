@@ -1,0 +1,42 @@
+✅ 1. Prerequisites
+Install Node.js: Download from official site
+
+Verify with:
+
+node -v
+npm -v
+Install VS Code: Download here
+
+✅ 2. Create Your Node.js Project
+Open VS Code
+
+Open a new folder (File > Open Folder)
+
+Open Terminal (Terminal > New Terminal)
+
+✅ 3. Initialize Node.js Project
+In the terminal:
+
+npm init -y
+This creates a package.json file.
+
+✅ 4. Create Entry File
+Create a file named app.js or index.js:
+
+javascript ->
+
+// app.js
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+  res.end('Hello, Node.js!');
+});
+
+server.listen(3000, () => {
+  console.log('Server is running on http://localhost:3000');
+});
+
+✅ 5. Run the App
+In the terminal:
+
+node app.js

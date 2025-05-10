@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json()); // for API JSON parsing
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/simpledb', {
+mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => console.log('Connected to MongoDB'))
@@ -21,7 +21,7 @@ const User = mongoose.model('User', { name: String, email: String });
 // HTML wrapper for browser view
 const wrapHtml = (bodyContent) => `
   <html>
-    <head><link rel="stylesheet" href="/styles.css"></head>
+    <head><link rel="stylesheet" href="/public/styles.css"></head>
     <body>${bodyContent}</body>
   </html>
 `;
