@@ -1,7 +1,7 @@
 runtime: nodejs20
 
 env_variables:
-  MONGO_URI: "mongodb+srv://Rainas:1405raina@cluster0.3kjzt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+  MONGO_URI: "mongodb+srv://ABC:abc123@cluster0.3kjzt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
   NODE_ENV: "production"
 
 instance_class: F1
